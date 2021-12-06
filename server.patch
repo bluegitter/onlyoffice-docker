@@ -1,0 +1,29 @@
+From 6d78a979da63b2587524079516141f5d5067b0ef Mon Sep 17 00:00:00 2001
+From: bluegitter <2082307@qq.com>
+Date: Mon, 6 Dec 2021 08:49:37 +0000
+Subject: [PATCH] =?UTF-8?q?=E4=BF=AE=E6=94=B9=E8=BF=9E=E6=8E=A5=E6=95=B0?=
+ =?UTF-8?q?=E9=99=90=E5=88=B6?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ Common/sources/constants.js | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/Common/sources/constants.js b/Common/sources/constants.js
+index 63d3249..2bf037a 100644
+--- a/Common/sources/constants.js
++++ b/Common/sources/constants.js
+@@ -72,7 +72,8 @@ exports.LICENSE_RESULT = {
+   ExpiredLimited: 11
+ };
+ 
+-exports.LICENSE_CONNECTIONS = 20;
++//修改连接数限制
++exports.LICENSE_CONNECTIONS = 65535;
+ exports.LICENSE_EXPIRE_USERS_ONE_DAY = 24 * 60 * 60; // day in seconds
+ 
+ exports.AVS_OFFICESTUDIO_FILE_UNKNOWN =  0x0000;
+-- 
+Gitee
